@@ -8,10 +8,10 @@
 </div>
 
 <div class="categorys">
-   <% @category.each do |category| %>
+   <% @categorys.each do |category| %>
      <div class="category">
        <div class="category-name">
-          <a href="#"><%= category.name %></a>
+          <%= link_to category.name, category_books_path(category) %>
        </div>
      </div>
    <% end %>
