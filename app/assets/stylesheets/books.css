@@ -1,0 +1,162 @@
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.category_bar {
+  background-color: #111111;
+  width: 300px;
+  height: 100vh;
+
+}
+
+.category-bar-header {
+  height: 100px;
+  padding: 0 20px;
+  background-color: hsl(214, 27%, 20%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-name a{
+  font-size: 16px;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+.create-category {
+  font-size: 10px;
+}
+
+.create-category a {
+  border: 1px solid lightblue;
+  padding: 14px;
+  color: deepskyblue;
+  text-decoration: none;
+}
+
+.categorys {
+  background-color: #2F3E51;
+  height: calc(100vh - 100px);
+  padding: 0 20px;
+  overflow: scroll;
+}
+
+.category {
+  padding: 20px 0 40px;
+}
+
+.category-name a {
+  text-decoration: none;
+  color: white;
+}
+
+.books {
+  background-color: rgba(244, 248, 248, 0.664);
+  width: calc(100vw - 300px);
+  height: 100vh;
+}
+
+.book-header {
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-header {
+  margin-right: 700px;
+}
+
+.header-title {
+  color: #333;
+  font-size: 24px;
+  margin-top: 36px;
+}
+
+.header-button {
+  margin-top: 40px;
+}
+
+.header-button a {
+  text-decoration: none;
+  border: 1px solid darkred;
+  color: darkred;
+  padding: 20px;
+}
+
+.form {
+  background-color: #DDDDDD;
+  height: 90px;
+  padding: 20px 40px;
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.form-input {
+  background-color: white;
+  display: flex;
+  width: 100%;
+}
+
+.form-title {
+  border: none;
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.form-submit {
+  background-color: #38AEF0;
+  border: none;
+  color: white;
+  font-size: 16px;
+  height: 50px;
+  margin-left: 15px;
+  padding: 0 20px;
+}
+
+.form-image {
+  font-size: 12px;
+  background-color: #111111;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.book-main {
+  background-color: #FAFAFA;
+  padding: 0 70px;
+  overflow: scroll;
+  display: flex;
+}
+
+.book-status {
+  margin: 0 100px 0 0 ;
+}
+
+.upper-book {
+  display: flex;
+}
+
+.book-date {
+  color: #999;
+  font-size: 12px;
+}
+
+.lower-book {
+  margin-top: 10px;
+}
+
+.book-content {
+  color: #434a54;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
