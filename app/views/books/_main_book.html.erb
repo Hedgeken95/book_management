@@ -23,19 +23,5 @@
 <% end %>
 
 <div class="book-main">
-  <div class="book-status">
-    <div class="upper-book">
-      <div class="book-user">
-        Tom
-      </div>
-      <div class="book-date">
-        2020/3/31(Wed) 12:43:30
-      </div>
-    </div>
-    <div class="lower-book">
-      <div class="book-content">
-        おはよう
-      </div>
-    </div>
-  </div>
+  <%= render partial: 'book', collection: @books %>
 </div>

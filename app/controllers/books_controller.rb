@@ -3,6 +3,7 @@ class BooksController < ApplicationController
     @categorys = Category.all
     @book = Book.new
     @category = Category.find(params[:category_id])
+    @books = @category.books.includes(:user)
   end
 
   def create
@@ -11,6 +12,7 @@ class BooksController < ApplicationController
     if @book.save
       redirect_to category_books_path(@category)
     else
+      @books = @category.books.includes(:user)
       render :index
     end
   end
