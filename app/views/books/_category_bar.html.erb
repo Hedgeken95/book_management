@@ -3,14 +3,16 @@
     <%= link_to current_user.name, edit_user_path(current_user) %>
   </div>
   <div class="create-category">
-    <a href="#">チャットを作成する</a>
+    <%= link_to "チャットを作成する", new_category_path %>
   </div>
 </div>
 
 <div class="categorys">
-    <div class="category">
-      <div class="category-name">
-         <a href="#">techroom1</a>
-      </div>
-    </div>
+   <% @category.each do |category| %>
+     <div class="category">
+       <div class="category-name">
+          <a href="#"><%= category.name %></a>
+       </div>
+     </div>
+   <% end %>
 </div>
