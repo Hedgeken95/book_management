@@ -13,32 +13,32 @@
 .category-bar-header {
   height: 100px;
   padding: 0 20px;
-  background-color: hsl(214, 27%, 20%);
+  background-color: #eaf6fd;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .header-name a{
-  font-size: 16px;
-  color: #FAFAFA;
+  font-size: 20px;
+  color: #111;
   text-decoration: none;
 }
 
 .create-category {
-  font-size: 10px;
+  font-size: 13px;
 }
 
 .create-category a {
-  border: 1px solid lightblue;
+  border: 1px solid #00a5dd;
   padding: 14px;
-  color: deepskyblue;
+  color: #00a5dd;
   text-decoration: none;
 }
 
 .categorys {
-  background-color: #2F3E51;
-  height: calc(100vh - 100px);
+  background-color: #e9f5cd;
+  height: 100vh;
   padding: 0 20px;
   overflow: scroll;
 }
@@ -49,7 +49,7 @@
 
 .category-name a {
   text-decoration: none;
-  color: white;
+  color: #111;
 }
 
 .books {
@@ -63,6 +63,7 @@
   padding: 0 40px;
   display: flex;
   justify-content: space-between;
+  background-color: #eaf6fd;
 }
 
 .header-title {
@@ -77,16 +78,15 @@
 
 .header-button a {
   text-decoration: none;
-  border: 1px solid darkred;
-  color: darkred;
+  border: 1px solid #6a397d;
+  color: #6a397d;
   padding: 20px;
 }
 
 .form {
-  background-color: #DDDDDD;
+  background-color: #f0eeee;
   height: 90px;
   padding: 20px 40px;
-  margin-bottom: 50px;
   display: flex;
 }
 
@@ -104,9 +104,9 @@
 }
 
 .form-submit {
-  background-color: #38AEF0;
+  background-color: #8490c8;
   border: none;
-  color: white;
+  color: #111111;
   font-size: 16px;
   height: 50px;
   margin-left: 15px;
@@ -115,7 +115,7 @@
 
 .form-image {
   font-size: 12px;
-  background-color: #111111;
+  background-color: #111;
   color: white;
   padding: 12px;
   width: 60px;
@@ -128,14 +128,16 @@
 }
 
 .book-main {
-  background-color: #FAFAFA;
-  padding: 0 70px;
-  overflow: scroll;
+  height: 100vh;
+  background-color: #eaf6fd;
+  padding: 50px 70px 0;
+  overflow-y: scroll;
+  flex-wrap: wrap;
   display: flex;
 }
 
 .book-status {
-  margin: 0 100px 0 0 ;
+  margin: 0 0 50px 50px;
 }
 
 .upper-book {
