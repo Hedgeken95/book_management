@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'books/index'
   root to: "categories#index"
   resources :users, only: [:edit, :update]
-  resources :categories, only: [:new, :create] do
+  resources :categories, only: [:new, :create, :destroy] do
     resources :books, only: [:index, :create]
   end
 end
