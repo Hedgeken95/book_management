@@ -8,5 +8,6 @@
     <div class="message-content">
       <%= book.content %>
     </div>
+    <%= image_tag book.image.variant(resize: '300x350'), class: 'book-image' if book.image.attached? %>
   </div>
 </div>
