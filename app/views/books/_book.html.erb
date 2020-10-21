@@ -1,5 +1,4 @@
 <div class="book-status">
-    <%= link_to "/categories/:category_id/books/:id(.:format)", method: :get do %>
         <div class="upper-book">
            <div class="book-date">
              <%= l book.created_at %>
@@ -9,7 +8,6 @@
              <div class="book-content">
                <%= book.content %>
              </div>
-             <%= image_tag book.image.variant(resize: '200x350'), class: 'book-image' if book.image.attached? %>
+             <%= image_tag book.image.variant(resize: '250x600'), class: 'book-image' if book.image.attached? %>
          </div>
-    <% end %>
    </div>
