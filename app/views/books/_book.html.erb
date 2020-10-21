@@ -1,13 +1,15 @@
-<div class="message">
-  <div class="upper-message">
-    <div class="message-date">
-      <%= l book.created_at %>
-    </div>
-  </div>
-  <div class="lower-message">
-    <div class="message-content">
-      <%= book.content %>
-    </div>
-    <%= image_tag book.image.variant(resize: '300x350'), class: 'book-image' if book.image.attached? %>
-  </div>
-</div>
+<div class="book-status">
+    <%= link_to "/categories/:category_id/books/:id(.:format)", method: :get do %>
+        <div class="upper-book">
+           <div class="book-date">
+             <%= l book.created_at %>
+           </div>
+         </div>
+         <div class="lower-book">
+             <div class="book-content">
+               <%= book.content %>
+             </div>
+             <%= image_tag book.image.variant(resize: '200x350'), class: 'book-image' if book.image.attached? %>
+         </div>
+    <% end %>
+   </div>
