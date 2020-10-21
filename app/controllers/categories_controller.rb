@@ -1,7 +1,7 @@
 class CategoriesController < ApplicationController
 
   def index
-    @category = Category.all
+    @categorys = Category.all
   end
   
   def new
@@ -15,6 +15,12 @@ class CategoriesController < ApplicationController
     else
       render :new
     end
+  end
+
+  def destroy
+    category = Category.find(params[:id])
+    category.destroy
+    redirect_to root_path
   end
 
   private
