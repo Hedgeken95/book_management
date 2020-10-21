@@ -122,3 +122,7 @@ select {
   height: 80px;
   width: 100%;
 }
+
+.field_with_errors {
+  display: contents;
+}

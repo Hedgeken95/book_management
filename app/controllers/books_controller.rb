@@ -7,6 +7,7 @@ class BooksController < ApplicationController
   end
 
   def create
+    @categorys = Category.all
     @category = Category.find(params[:category_id])
     @book = @category.books.new(book_params)
     if @book.save
