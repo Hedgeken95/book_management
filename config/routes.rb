@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   root to: "categories#index"
   resources :users, only: [:edit, :update]
   resources :categories, only: [:new, :create, :destroy] do
-    resources :books, only: [:index, :create, :show]
+    resources :books, only: [:index, :create]
   end
 end

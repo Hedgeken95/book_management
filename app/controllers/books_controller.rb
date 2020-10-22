@@ -18,9 +18,7 @@ class BooksController < ApplicationController
     end
   end
 
-  def show
-    @category = Category.find(params[:category_id])
-  end
+  
   private
 
   def book_params
