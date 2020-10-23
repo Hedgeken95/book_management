@@ -1,24 +1,17 @@
-# README
+# BOOK_MANAGEMENT
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## **家にある本を管理できるアプリです。**
 
-Things you may want to cover:
+## :blue_book: 概要
 
-* Ruby version
+### *ユーザー登録
+___
+### *カテゴリーの作成・削除
+___
+### *本タイトル・表紙の画像の投稿
+___
 
-* System dependencies
+## :blue_book: URL
 
-* Configuration
+### **https://book-management-29736.herokuapp.com/**
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
