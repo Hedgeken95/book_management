@@ -27,7 +27,8 @@
 ### 自分自身、父親が持っている本を買ってきてしまった経験があり、そういったミスを減らしたいと思い作りました。
 
 ## :blue_book: 要件定義
-(https://user-images.githubusercontent.com/70503081/97105137-2730a080-16fc-11eb-9f1e-fc2a106abab3.jpeg)
+![2D3E22D9-53C6-42CC-9315-C7AC2EBA58D9_1_105_c](https://user-images.githubusercontent.com/70503081/97105238-b2119b00-16fc-11eb-9004-f7d26c66d923.jpeg)
+
 
 ### **https://docs.google.com/spreadsheets/d/1RBIYYQOE5Zm6uFlbR2sjAanYsHkjzE7Q_GrYU8bibh4/edit#gid=282075926**
 
