@@ -65,4 +65,44 @@
 #### 現状、タイトルを間違えても編集できないため
 
 ### 2. 本削除機能
-#### 現状、本が削除できないため、画像やタイトルを間違えても何もできないため
+#### 現状、本が削除できないので、画像やタイトルを間違えても何もできないため
+
+## :blue_book: DB設計
+
+### users テーブル
+
+| Column   | Type   | Options     |
+| -------- | ------ | ----------- |
+| name     | string | null: false |
+| email    | string | null: false |
+| password | string | null: false |
+
+#### Association
+
+- has_many :categories
+- has_many :books
+
+### categories テーブル
+
+| Column | Type   | Options     |
+| ------ | ------ | ----------- |
+| name   | string | null: false |
+
+#### Association
+
+- belongs_to :user
+- has_many   :books
+
+### books テーブル
+
+| Column   | Type       | Options                        |
+| -------- | ---------- | ------------------------------ |
+| content  | string     | null:false                     |
+| user     | references | null: false, foreign_key: true |
+| category | references | null: false, foreign_key: true |
+
+#### Association
+
+- belongs_to :category
+- belongs_to :user
+
