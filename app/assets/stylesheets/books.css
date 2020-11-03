@@ -158,3 +158,10 @@
   font-size: 14px;
   margin-bottom: 40px;
 }
+
+.book-delete-button {
+  border: 1px solid #111111;
+  padding: 14px;
+  color: #111111;
+  text-decoration: none;
+}

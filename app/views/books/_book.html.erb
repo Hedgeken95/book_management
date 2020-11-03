@@ -9,5 +9,8 @@
                <%= book.content %>
              </div>
              <%= image_tag book.image.variant(resize: '250x600'), class: 'book-image' if book.image.attached? %>
+             <div class="book-delete-button">
+               <% link_to "削除", category_book_path(@category.id, book.id), method: :delete %>
+             </div>
          </div>
    </div>

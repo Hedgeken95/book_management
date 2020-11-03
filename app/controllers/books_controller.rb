@@ -18,6 +18,12 @@ class BooksController < ApplicationController
     end
   end
 
+  def destroy
+    @categorys = Category.all
+    @category = Category.find(params[:category_id])
+    @book = @category.books.find(book_params)
+  end
+
   
   private
 
