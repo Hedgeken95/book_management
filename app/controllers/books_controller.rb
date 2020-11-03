@@ -19,9 +19,9 @@ class BooksController < ApplicationController
   end
 
   def destroy
-    @categorys = Category.all
-    @category = Category.find(params[:category_id])
-    @book = @category.books.find(book_params)
+    category = Category.find(params[:category_id])
+    book = category.books.find(params[:id])
+    book.destroy
   end
 
   
