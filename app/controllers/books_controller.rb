@@ -21,7 +21,9 @@ class BooksController < ApplicationController
   def destroy
     category = Category.find(params[:category_id])
     book = category.books.find(params[:id])
-    book.destroy
+    if book.destroy
+      redirect_to category_books_path
+    end
   end
 
   
